@@ -15,7 +15,7 @@ app.use("/api/products",productRoute);
 app.get('/',(req,res)=>{
     res.send('Hello from node API serve Update');
 });
-
+//MongoDB connection using connection string in MongoDB Compass
 mongoose.connect('mongodb://localhost:27017/API')
   .then(() => {
     console.log('Connected to DB!');
